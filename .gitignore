@@ -1,0 +1,19 @@
+# CubeIDE generated files
+syscalls.c
+sysmem.c
+
+# Build output
+Debug/
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# IDE files
+.settings/
+.cproject
+
+
