@@ -25,13 +25,13 @@ void i2c_init(void){
 	I2C1_CR1 &= ~(1<<15);
 
 	I2C1_CR2 &= ~(0x3F);
-	I2C1_CR2 |=  (0x10);
+	I2C1_CR2 |=  (0x2A);  // 42MHz
 
 	I2C1_CCR &= ~(0xFFF);
-	I2C1_CCR |= (0x50);
+	I2C1_CCR |= (0xD2);
 
 	I2C1_TRISE &= ~(0x3F);
-	I2C1_TRISE |=  (0x11);
+	I2C1_TRISE |= (0x2B);
 
 	I2C1_CR1 |= (0x1);
 }

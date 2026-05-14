@@ -15,7 +15,7 @@ void uart_init(void){
     GPIOA_AFRL  &= ~(0xF << 8);
     GPIOA_AFRL  |=  (0x7 << 8);
 
-    USART2_BRR = 0x8B;
+    USART2_BRR = 0x16D;  //42MHz clock for FreeRTOS
     USART2_CR1 |= (1<<13);
     USART2_CR1 |= (1<<3);
 }
